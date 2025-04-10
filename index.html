@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>animals</title>
+  <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+  <script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script> 
+</head>
+
+<body>
+  <a-scene>
+    <a-assets>
+      <a-asset-item id="dog" src="assets/dog.ply"></a-asset-item>
+      <a-asset-item id="cat" src="assets/cat.ply"></a-asset-item>
+    </a-assets>
+
+    <a-sky color="lightblue"></a-sky>
+    
+    <!-- Position dogs -->
+    <a-entity id="dog_1"
+      ply-model="src: #dog"
+      position="0 0 -2"
+      rotation="0 0 0"
+      scale="1 1 1"
+    ></a-entity>
+
+    <a-entity id="dog_2"
+      ply-model="src: #dog"
+      position="0 2 -2"
+      rotation="0 0 0"
+      scale="1 1 1"
+    ></a-entity>
+
+    <!-- Position cats -->
+    <a-entity id="cat_"
+      ply-model="src: #cat"
+      position="1 0 -2"
+      rotation="0 0 0"
+      scale="1 1 1"
+    ></a-entity>
+
+    <a-entity id="cat_2"
+      ply-model="src: #cat"
+      position="1 2 -2"
+      rotation="0 0 0"
+      scale="1 1 1"
+    ></a-entity>
+              
+  </a-scene>
+</body>
+</html>
